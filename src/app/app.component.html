@@ -1,1 +1,9 @@
-<app-quote-form><app-quote-form>
+<div class="">
+  <h1> Quote Vote</h1>
+  <hr>
+  <ul>
+    <li *ngFor = 'let quote of quotes'>
+      {{quote.name}}
+    </li>
+  </ul>
+</div>
