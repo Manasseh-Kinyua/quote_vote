@@ -1,11 +1,11 @@
-<div class="container">
+<div class="container ">
   <div class = jumbotron>
   <h1> Quote Vote</h1>
   </div>
   <hr>
 
-  <div class="row">
-    <div class="col-md-6">
+  <div class="row ">
+    <div class="col-md-6 bg-dark text-white">
       <div *ngFor = 'let quote of quotes; let i = index'>
         <div>
           <h4>{{quote.name}} made on {{quote.completeDate|date|uppercase}}</h4>
@@ -20,7 +20,7 @@
         </div>
       </div>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-6 bg-secondary text-white">
       <app-quote-form (addQuote) = "addNewQuote($event)"></app-quote-form>
     </div>
   </div>
