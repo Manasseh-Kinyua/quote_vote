@@ -8,6 +8,10 @@
         <div>
           <h4>{{quote.name}} made on {{quote.completeDate|date|uppercase}}</h4>
           <button (click) = 'toggleDetails(i)' class = "btn btn-outline-danger">author</button>
+          <br>
+          <button><i class="fas fa-thumbs-up"></i></button>
+          <br>
+          <button><i class="fas fa-thumbs-down"></i></button>
         </div>
         <div>
             <app-quote-author *ngIf = 'quote.showAuthor' [quote] = 'quote' (isComplete) = 'deleteQuote($event, i)'></app-quote-author>
