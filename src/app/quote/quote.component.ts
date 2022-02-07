@@ -9,9 +9,9 @@ import { Quote } from '../quote';
 export class QuoteComponent implements OnInit {
 
   quotes: Quote[] = [
-    new Quote (1, 'The purpose of our lives is to be happy', 'Dalai Lama'),
-    new Quote (2, 'Many of failures in life are people who did not realise how close they were to success when they gave up', 'Thomas Edison'),
-    new Quote (3, 'Not how long but how well you have lived is the thing', 'Seneca')
+    new Quote (1, 'The purpose of our lives is to be happy', 'Dalai Lama', new Date(2022, 2, 6)),
+    new Quote (2, 'Many of failures in life are people who did not realise how close they were to success when they gave up', 'Thomas Edison', new Date(2022, 2, 6)),
+    new Quote (3, 'Not how long but how well you have lived is the thing', 'Seneca', new Date(2022, 2, 6))
   ];
 
   toggleDetails(index: number) {

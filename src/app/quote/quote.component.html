@@ -3,7 +3,7 @@
   <hr>
   <ul>
     <div *ngFor = 'let quote of quotes; let i = index'>
-      <li>{{quote.name}}</li>
+      <li>{{quote.name}} made on {{quote.completeDate|date|uppercase}}</li>
       <button (click) = 'toggleDetails(i)'>author</button>
       <app-quote-author *ngIf = 'quote.showAuthor' [quote] = 'quote' (isComplete) = 'deleteQuote($event, i)'></app-quote-author>
     </div>
