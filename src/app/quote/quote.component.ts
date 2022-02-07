@@ -38,7 +38,7 @@ export class QuoteComponent implements OnInit {
   countVote = 0;
 
   upVote() {
-    
+    // this.target.innerHTML = this.countVote++;
   }
 
   downVote() {

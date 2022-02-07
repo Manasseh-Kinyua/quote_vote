@@ -1,4 +1,28 @@
 # QuoteVote
+(https://manasseh-kinyua.github.io/quote_vote/)
+
+
+#### A Moringa School project with Angular to Practice the basic understanding of angular concepts.
+
+#### By
+[Manasseh Kinyua](https://github.com/Manasseh-Kinyua)
+
+## Setup/Installation Requirements
+* Open the link above and the page will load.
+* Fill the fields and add a quote.
+
+##Technologies Used
+- HTML
+- Bootstrap
+- JavaScript
+- Typescript
+- Angular
+
+##Support
+manasseh.kinyua@student.moringaschool.com
+
+###License
+{Manasseh Kinyua}
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.4.
 
