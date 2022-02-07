@@ -1,11 +1,18 @@
-<div class="">
+<div class="container">
   <h1> Quote Vote</h1>
   <hr>
-  <ul>
-    <div *ngFor = 'let quote of quotes; let i = index'>
-      <li>{{quote.name}} made on {{quote.completeDate|date|uppercase}}</li>
-      <button (click) = 'toggleDetails(i)'>author</button>
-      <app-quote-author *ngIf = 'quote.showAuthor' [quote] = 'quote' (isComplete) = 'deleteQuote($event, i)'></app-quote-author>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div *ngFor = 'let quote of quotes; let i = index'>
+        <div>
+          <h4>{{quote.name}} made on {{quote.completeDate|date|uppercase}}</h4>
+          <button (click) = 'toggleDetails(i)' class = "btn btn-outline-danger">author</button>
+        </div>
+        <div>
+            <app-quote-author *ngIf = 'quote.showAuthor' [quote] = 'quote' (isComplete) = 'deleteQuote($event, i)'></app-quote-author>
+        </div>
+      </div>
     </div>
-  </ul>
+  </div>
 </div>
